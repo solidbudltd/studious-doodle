@@ -1489,6 +1489,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* Panels promise banner */
+.panels-promise {
   background: linear-gradient(135deg, var(--clr-dark-4) 0%, rgba(212,168,67,0.07) 100%);
   border: 1px solid rgba(212,168,67,0.2);
   border-radius: 12px;
@@ -1578,12 +1579,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 600px) {
-    .promise-stats {
-      grid-template-columns: 1fr;
-    }
-  }
-
   .panel-visual {
     min-height: 220px;
   }
@@ -1594,6 +1589,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   .panels-promise {
     padding: var(--sp-md);
+  }
+}
+
+@media (max-width: 600px) {
+  .promise-stats {
+    grid-template-columns: 1fr;
   }
 }
 
