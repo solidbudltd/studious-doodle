@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4e6f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#bdc3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#95a5a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background (construction site office) -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  <!-- Back wall -->
+  <rect x="50" y="80" width="700" height="420" fill="#ecf0f1" rx="4"/>
+  <!-- Window -->
+  <rect x="580" y="120" width="140" height="100" fill="#85c1e9" rx="3"/>
+  <line x1="650" y1="120" x2="650" y2="220" stroke="white" stroke-width="3"/>
+  <line x1="580" y1="170" x2="720" y2="170" stroke="white" stroke-width="3"/>
+  <!-- Blueprints on wall -->
+  <rect x="80" y="110" width="180" height="130" fill="#2980b9" rx="3" opacity="0.9"/>
+  <line x1="100" y1="130" x2="240" y2="130" stroke="white" stroke-width="1" opacity="0.6"/>
+  <line x1="100" y1="150" x2="240" y2="150" stroke="white" stroke-width="1" opacity="0.6"/>
+  <rect x="110" y="165" width="60" height="50" fill="none" stroke="white" stroke-width="1.5" opacity="0.8"/>
+  <line x1="170" y1="165" x2="220" y2="215" stroke="white" stroke-width="1" opacity="0.6"/>
+  <line x1="220" y1="165" x2="170" y2="215" stroke="white" stroke-width="1" opacity="0.6"/>
+  <!-- Text on blueprints -->
+  <text x="90" y="220" font-size="10" fill="white" opacity="0.9" font-family="monospace">PLAN BUDYNKU</text>
+  <!-- Hard hat on wall hook -->
+  <ellipse cx="480" cy="130" rx="35" ry="25" fill="#f39c12"/>
+  <rect x="460" y="130" width="40" height="10" fill="#e67e22"/>
+  <!-- Table -->
+  <rect x="100" y="400" width="600" height="15" fill="#7f8c8d" rx="3"/>
+  <rect x="110" y="415" width="20" height="70" fill="#7f8c8d" rx="2"/>
+  <rect x="670" y="415" width="20" height="70" fill="#7f8c8d" rx="2"/>
+  <!-- Person 1 (standing, hard hat) -->
+  <circle cx="220" cy="280" r="30" fill="#f0d0b0"/>
+  <ellipse cx="220" cy="275" rx="35" ry="20" fill="#e8420a"/>
+  <rect x="190" y="308" width="60" height="90" fill="#2980b9" rx="5"/>
+  <rect x="185" y="315" width="15" height="70" fill="#2980b9" rx="4"/>
+  <rect x="260" y="315" width="15" height="70" fill="#2980b9" rx="4"/>
+  <rect x="195" y="395" width="25" height="20" fill="#1a252f" rx="3"/>
+  <rect x="225" y="395" width="25" height="20" fill="#1a252f" rx="3"/>
+  <!-- Person 2 (at table, looking at plans) -->
+  <circle cx="420" cy="280" r="28" fill="#d4a080"/>
+  <rect x="390" y="306" width="60" height="80" fill="#27ae60" rx="5"/>
+  <rect x="385" y="313" width="14" height="65" fill="#27ae60" rx="4"/>
+  <rect x="451" y="313" width="14" height="65" fill="#27ae60" rx="4"/>
+  <!-- Hard hat on person 2 -->
+  <ellipse cx="420" cy="272" rx="32" ry="18" fill="#f1c40f"/>
+  <rect x="395" y="272" width="50" height="8" fill="#f39c12"/>
+  <rect x="395" y="370" width="25" height="18" fill="#1a252f" rx="3"/>
+  <rect x="425" y="370" width="25" height="18" fill="#1a252f" rx="3"/>
+  <!-- Person 3 (pointing) -->
+  <circle cx="610" cy="290" r="28" fill="#f0d0b0"/>
+  <rect x="582" y="316" width="55" height="80" fill="#8e44ad" rx="5"/>
+  <rect x="575" y="325" width="14" height="60" fill="#8e44ad" rx="4"/>
+  <rect x="637" y="320" width="14" height="40" fill="#8e44ad" rx="4"/>
+  <rect x="651" y="325" width="20" height="8" fill="#f0d0b0" rx="3"/>
+  <rect x="585" y="388" width="24" height="18" fill="#1a252f" rx="3"/>
+  <rect x="614" y="388" width="24" height="18" fill="#1a252f" rx="3"/>
+  <!-- Clipboard / papers on table -->
+  <rect x="300" y="370" width="150" height="100" fill="white" rx="4" opacity="0.9"/>
+  <line x1="320" y1="390" x2="430" y2="390" stroke="#bdc3c7" stroke-width="2"/>
+  <line x1="320" y1="405" x2="430" y2="405" stroke="#bdc3c7" stroke-width="2"/>
+  <line x1="320" y1="420" x2="430" y2="420" stroke="#bdc3c7" stroke-width="2"/>
+  <line x1="320" y1="435" x2="380" y2="435" stroke="#bdc3c7" stroke-width="2"/>
+  <!-- SOLIDBUD label -->
+  <rect x="0" y="560" width="800" height="40" fill="#e8420a" opacity="0.9"/>
+  <text x="400" y="585" text-anchor="middle" font-size="16" fill="white" font-family="Arial, sans-serif" font-weight="bold">SOLIDBUD LTD – NASZ ZESPÓŁ</text>
+</svg>
