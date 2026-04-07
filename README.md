@@ -54,4 +54,4 @@ python3 -m http.server 8080
 
 ## Language
 
-The website content is in **Polish** (the primary market language for SOLIDBUD LTD).
+The website content is in **Polish** — SOLIDBUD LTD is a Polish-run construction company based in Manchester, UK, serving the Polish-speaking community in Greater Manchester. All pricing is in GBP (£) and VAT is at the UK standard rate of 20%.
