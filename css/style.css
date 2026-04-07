@@ -782,7 +782,7 @@ input, textarea, select {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform var(--transition-slow);
+  transition: transform var(--transition-lg);
 }
 
 .project-card:hover .project-card__image img {

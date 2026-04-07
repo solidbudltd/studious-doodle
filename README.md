@@ -30,6 +30,15 @@ Professional company website for **SOLIDBUD LTD**, a construction firm offering 
 │   └── style.css     # Stylesheet (responsive, CSS variables)
 ├── js/
 │   └── main.js       # JavaScript (navigation, filter, form, animations)
+├── images/
+│   ├── hero-bg.svg        # Hero section background illustration
+│   ├── about-team.svg     # About section team photo illustration
+│   ├── project-1.svg      # Project card – residential estate
+│   ├── project-2.svg      # Project card – commercial office
+│   ├── project-3.svg      # Project card – industrial hall
+│   ├── project-4.svg      # Project card – service complex
+│   ├── project-5.svg      # Project card – hotel
+│   └── project-6.svg      # Project card – eco/logistics building
 └── README.md
 ```
 
