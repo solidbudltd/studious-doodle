@@ -46,19 +46,19 @@ const CATEGORIES = [
 ];
 
 const SERVICES = {
-  gladz:      { name: 'Gładź gipsowa',              unit: 'm²',  price: 45,    max: 500, step: 5,  desc: 'Szpachlowanie i gładzenie ścian i sufitów' },
-  malowanie:  { name: 'Malowanie ścian',             unit: 'm²',  price: 28,    max: 500, step: 5,  desc: '2 warstwy farby emulsyjnej' },
-  tynk:       { name: 'Tynk maszynowy',              unit: 'm²',  price: 42,    max: 500, step: 5,  desc: 'Tynk gipsowy lub cementowo-wapienny' },
-  plytki_pod: { name: 'Płytki podłogowe',            unit: 'm²',  price: 85,    max: 300, step: 5,  desc: 'Układanie i fugowanie – bez materiału' },
-  panele:     { name: 'Panele podłogowe',             unit: 'm²',  price: 50,    max: 300, step: 5,  desc: 'Montaż z podkładem – bez materiału' },
-  wylewka:    { name: 'Wylewka samopoziomująca',      unit: 'm²',  price: 55,    max: 300, step: 5,  desc: 'Warstwa 3–5 cm – z materiałem' },
-  plytki_sc:  { name: 'Płytki ścienne',              unit: 'm²',  price: 95,    max: 300, step: 5,  desc: 'Układanie i fugowanie – bez materiału' },
-  scianka:    { name: 'Ścianka działowa GK',          unit: 'm²',  price: 175,   max: 200, step: 5,  desc: 'Podwójna płyta GK, profil 75 mm' },
-  el_punkt:   { name: 'Punkt elektryczny',            unit: 'szt', price: 120,   max: 100, step: 1,  desc: 'Gniazdko, włącznik lub wypust oświetleniowy' },
-  hyd_punkt:  { name: 'Punkt hydrauliczny',           unit: 'szt', price: 280,   max: 50,  step: 1,  desc: 'Doprowadzenie wody lub odpływ kanalizacyjny' },
-  drzwi:      { name: 'Montaż drzwi wewnętrznych',   unit: 'szt', price: 600,   max: 20,  step: 1,  desc: 'Montaż z ościeżnicą regulowaną – bez materiału' },
-  okno:       { name: 'Montaż okna',                  unit: 'szt', price: 350,   max: 20,  step: 1,  desc: 'Montaż, uszczelnienie i pianka montażowa' },
-  lazienka:   { name: 'Remont łazienki (kompleks)',   unit: 'szt', price: 22000, max: 5,   step: 1,  desc: 'Kompleksowy remont – bez materiałów' },
+  gladz:      { name: 'Gładź gipsowa',              unit: 'm²',  price: 15,   max: 500, step: 5,  desc: 'Szpachlowanie i gładzenie ścian i sufitów' },
+  malowanie:  { name: 'Malowanie ścian',             unit: 'm²',  price: 8,    max: 500, step: 5,  desc: '2 warstwy farby emulsyjnej' },
+  tynk:       { name: 'Tynk maszynowy',              unit: 'm²',  price: 20,   max: 500, step: 5,  desc: 'Tynk gipsowy lub cementowo-wapienny' },
+  plytki_pod: { name: 'Płytki podłogowe',            unit: 'm²',  price: 35,   max: 300, step: 5,  desc: 'Układanie i fugowanie – bez materiału' },
+  panele:     { name: 'Panele podłogowe',             unit: 'm²',  price: 15,   max: 300, step: 5,  desc: 'Montaż z podkładem – bez materiału' },
+  wylewka:    { name: 'Wylewka samopoziomująca',      unit: 'm²',  price: 25,   max: 300, step: 5,  desc: 'Warstwa 3–5 cm – z materiałem' },
+  plytki_sc:  { name: 'Płytki ścienne',              unit: 'm²',  price: 40,   max: 300, step: 5,  desc: 'Układanie i fugowanie – bez materiału' },
+  scianka:    { name: 'Ścianka działowa GK',          unit: 'm²',  price: 65,   max: 200, step: 5,  desc: 'Podwójna płyta GK, profil 75 mm' },
+  el_punkt:   { name: 'Punkt elektryczny',            unit: 'szt', price: 120,  max: 100, step: 1,  desc: 'Gniazdko, włącznik lub wypust oświetleniowy' },
+  hyd_punkt:  { name: 'Punkt hydrauliczny',           unit: 'szt', price: 200,  max: 50,  step: 1,  desc: 'Doprowadzenie wody lub odpływ kanalizacyjny' },
+  drzwi:      { name: 'Montaż drzwi wewnętrznych',   unit: 'szt', price: 250,  max: 20,  step: 1,  desc: 'Montaż z ościeżnicą regulowaną – bez materiału' },
+  okno:       { name: 'Montaż okna',                  unit: 'szt', price: 300,  max: 20,  step: 1,  desc: 'Montaż, uszczelnienie i pianka montażowa' },
+  lazienka:   { name: 'Remont łazienki (kompleks)',   unit: 'szt', price: 5000, max: 5,   step: 1,  desc: 'Kompleksowy remont – bez materiałów' },
 };
 
 // ===== State =====
@@ -68,8 +68,8 @@ Object.keys(SERVICES).forEach(key => { state[key] = 0; });
 
 // ===== Helpers =====
 
-function formatPLN(amount) {
-  return amount.toLocaleString('pl-PL', { style: 'currency', currency: 'PLN', maximumFractionDigits: 0 });
+function formatGBP(amount) {
+  return amount.toLocaleString('en-GB', { style: 'currency', currency: 'GBP', maximumFractionDigits: 0 });
 }
 
 function clamp(value, min, max) {
@@ -87,7 +87,7 @@ function renderCalculator() {
       <button class="calc__category-toggle" aria-expanded="true" aria-controls="cat-body-${cat.id}" data-cat="${cat.id}" type="button">
         <span class="calc__category-icon">${cat.icon}</span>
         <span class="calc__category-name">${cat.name}</span>
-        <span class="calc__category-subtotal" id="cat-sub-${cat.id}">0 zł</span>
+        <span class="calc__category-subtotal" id="cat-sub-${cat.id}">£0</span>
         <svg class="calc__category-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
       </button>
       <div class="calc__category-body" id="cat-body-${cat.id}">
@@ -109,7 +109,7 @@ function renderServiceItem(key) {
           <p class="calc__item-desc">${s.desc}</p>
         </div>
         <div class="calc__item-rate-badge">
-          <span class="calc__item-rate">${formatPLN(s.price)}</span>
+          <span class="calc__item-rate">${formatGBP(s.price)}</span>
           <span class="calc__item-unit">/ ${s.unit}</span>
         </div>
       </div>
@@ -134,7 +134,7 @@ function renderServiceItem(key) {
           </button>
           <span class="calc__qty-unit-label">${s.unit}</span>
         </div>
-        <div class="calc__item-subtotal" id="sub-${key}">0 zł</div>
+        <div class="calc__item-subtotal" id="sub-${key}">£0</div>
       </div>
       <input
         type="range"
@@ -163,7 +163,7 @@ function updateItem(key) {
   const subtotal = qty * SERVICES[key].price;
 
   const subEl = document.getElementById(`sub-${key}`);
-  if (subEl) subEl.textContent = formatPLN(subtotal);
+  if (subEl) subEl.textContent = formatGBP(subtotal);
 
   const qtyInput = document.getElementById(`qty-${key}`);
   if (qtyInput && Number(qtyInput.value) !== qty) qtyInput.value = qty;
@@ -197,7 +197,7 @@ function updateSummary() {
     // Update category header subtotal
     const catSubEl = document.getElementById(`cat-sub-${cat.id}`);
     if (catSubEl) {
-      catSubEl.textContent = catSum > 0 ? formatPLN(catSum) : '0 zł';
+      catSubEl.textContent = catSum > 0 ? formatGBP(catSum) : '£0';
       catSubEl.classList.toggle('calc__category-subtotal--active', catSum > 0);
     }
   });
@@ -226,21 +226,21 @@ function updateSummary() {
         <li class="calc__breakdown-item">
           <span class="calc__breakdown-name">${s.name}</span>
           <span class="calc__breakdown-qty">${qty} ${s.unit}</span>
-          <span class="calc__breakdown-subtotal">${formatPLN(subtotal)}</span>
+          <span class="calc__breakdown-subtotal">${formatGBP(subtotal)}</span>
         </li>`;
     }).join('');
   }
 
   // VAT
   const vatChecked = document.getElementById('calc-vat') && document.getElementById('calc-vat').checked;
-  const vatAmount = grandTotal * 0.23;
+  const vatAmount = grandTotal * 0.20;
   const grossAmount = grandTotal + vatAmount;
 
-  if (totalNetEl) totalNetEl.textContent = formatPLN(grandTotal);
+  if (totalNetEl) totalNetEl.textContent = formatGBP(grandTotal);
   if (vatRow) vatRow.hidden = !vatChecked;
   if (grossRow) grossRow.hidden = !vatChecked;
-  if (totalVatEl) totalVatEl.textContent = formatPLN(vatAmount);
-  if (totalGrossEl) totalGrossEl.textContent = formatPLN(grossAmount);
+  if (totalVatEl) totalVatEl.textContent = formatGBP(vatAmount);
+  if (totalGrossEl) totalGrossEl.textContent = formatGBP(grossAmount);
 
   // Mobile bar
   if (mobileBar) {
@@ -252,7 +252,7 @@ function updateSummary() {
   }
   if (mobileTotalEl) {
     const displayTotal = vatChecked ? grossAmount : grandTotal;
-    mobileTotalEl.textContent = formatPLN(displayTotal);
+    mobileTotalEl.textContent = formatGBP(displayTotal);
   }
 }
 
