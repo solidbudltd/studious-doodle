@@ -29,12 +29,14 @@
 
   function closeNav() {
     navLinks.classList.remove('open');
+    toggle.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   }
 
   function openNav() {
     navLinks.classList.add('open');
+    toggle.classList.add('open');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   }
@@ -73,7 +75,7 @@
   const fadeElements = document.querySelectorAll(
     '.pillar-card, .stat-card, .about-text, .about-stats, ' +
     '.philosophy-quote, .investors-text, .visual-card, ' +
-    '.contact-text, .contact-form'
+    '.contact-text, .contact-form, .project-card, .testimonial-card'
   );
 
   if (typeof IntersectionObserver !== 'undefined' && fadeElements.length) {
@@ -165,6 +167,68 @@
 
     msg.textContent = text;
     msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // ─── Scrollspy — active nav link on scroll ─────────────────
+  const sections = document.querySelectorAll('section[id]');
+  const navLinkEls = document.querySelectorAll('.nav-links a[href^="#"]');
+
+  if (typeof IntersectionObserver !== 'undefined' && sections.length) {
+    var spyObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          navLinkEls.forEach(function (link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach(function (section) { spyObserver.observe(section); });
+  }
+
+  // ─── Back to Top ───────────────────────────────────────────
+  var backToTop = document.getElementById('back-to-top');
+
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      backToTop.classList.toggle('visible', window.scrollY > 300);
+    }, { passive: true });
+
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ─── Cookie Consent (UK GDPR) ──────────────────────────────
+  var cookieBanner  = document.getElementById('cookie-banner');
+  var cookieAccept  = document.getElementById('cookie-accept');
+  var cookieDecline = document.getElementById('cookie-decline');
+  var COOKIE_KEY    = 'sb_cookie_consent';
+
+  function hideCookieBanner() {
+    if (cookieBanner) cookieBanner.hidden = true;
+  }
+
+  if (cookieBanner && !localStorage.getItem(COOKIE_KEY)) {
+    setTimeout(function () {
+      cookieBanner.hidden = false;
+    }, 1800);
+  }
+
+  if (cookieAccept) {
+    cookieAccept.addEventListener('click', function () {
+      localStorage.setItem(COOKIE_KEY, 'accepted');
+      hideCookieBanner();
+    });
+  }
+
+  if (cookieDecline) {
+    cookieDecline.addEventListener('click', function () {
+      localStorage.setItem(COOKIE_KEY, 'declined');
+      hideCookieBanner();
+    });
   }
 
 })();
