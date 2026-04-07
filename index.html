@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dom & Ogród Inwestycyjny — Czysto i Świeżo</title>
+  <meta name="description"
+    content="Nieruchomość inwestycyjna z ogrodem. Minimalne nakłady, maksymalny efekt. Czysto i świeżo." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────── -->
+  <nav aria-label="Główna nawigacja">
+    <span class="nav-logo">🌿 Dom&Ogród</span>
+    <ul class="nav-links">
+      <li><a href="#cechy">Cechy</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ────────────────────────────────────── -->
+  <header class="hero">
+    <span class="hero-badge">Oferta inwestycyjna</span>
+    <h1>Dom z ogrodem —<br><em>czysto i świeżo</em></h1>
+    <p>
+      Nieruchomość dla inwestorów, którzy cenią efekt bez zbędnych nakładów.
+      Zadbany ogród, jasne wnętrza, gotowe do wynajmu lub dalszej sprzedaży.
+    </p>
+    <div class="hero-cta">
+      <a href="#kontakt" class="btn btn-primary">Zapytaj o ofertę</a>
+      <a href="#cechy"   class="btn btn-outline">Dowiedz się więcej</a>
+    </div>
+  </header>
+
+  <!-- ── MOTTO STRIP ──────────────────────────────── -->
+  <div class="motto" aria-label="Motto projektu">
+    „Czysto i świeżo — takie było motto."
+  </div>
+
+  <!-- ── FEATURES ────────────────────────────────── -->
+  <section id="cechy" class="features">
+    <h2 class="section-title">Dlaczego warto?</h2>
+    <p class="section-sub">Maksymalny efekt przy minimalnych nakładach inwestycyjnych.</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon">🌱</div>
+        <h3>Zadbany ogród</h3>
+        <p>Przestronna, zielona działka wymagająca minimalnej pielęgnacji przez cały rok.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🏠</div>
+        <h3>Gotowe wnętrza</h3>
+        <p>Jasne, świeże wykończenie — bez potrzeby kapitalnego remontu przed wynajmem.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">💶</div>
+        <h3>Niskie koszty wejścia</h3>
+        <p>Przemyślana wycena pozwala zachować rentowność przy ograniczonym budżecie.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📍</div>
+        <h3>Dobra lokalizacja</h3>
+        <p>Spokojne osiedle z wygodnym dojazdem do centrum — idealne na wynajem długoterminowy.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🔧</div>
+        <h3>Minimalna konserwacja</h3>
+        <p>Trwałe materiały i prosta instalacja — niskie koszty utrzymania przez lata.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📈</div>
+        <h3>Potencjał wzrostu</h3>
+        <p>Rosnący rynek nieruchomości w okolicy gwarantuje wzrost wartości w długim terminie.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ──────────────────────────────────── -->
+  <section id="galeria" class="gallery">
+    <h2 class="section-title">Galeria</h2>
+    <p class="section-sub">Rzut oka na nieruchomość — zdjęcia do uzupełnienia.</p>
+
+    <div class="gallery-grid" aria-label="Galeria zdjęć nieruchomości">
+      <div class="gallery-item">🏡 Widok frontu</div>
+      <div class="gallery-item">🌳 Ogród</div>
+      <div class="gallery-item">🛋️ Salon</div>
+      <div class="gallery-item">🍳 Kuchnia</div>
+      <div class="gallery-item">🛏️ Sypialnia</div>
+      <div class="gallery-item">🪴 Taras</div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────── -->
+  <section id="kontakt" class="contact">
+    <h2 class="section-title">Skontaktuj się z nami</h2>
+    <p class="section-sub">Wypełnij formularz, a odezwiemy się w ciągu 24 godzin.</p>
+
+    <div class="contact-box">
+      <form
+        action="#"
+        method="post"
+        aria-label="Formularz kontaktowy"
+        onsubmit="handleSubmit(event)"
+      >
+        <div class="form-group">
+          <label for="name">Imię i nazwisko</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Jan Kowalski"
+            required
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adres e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="jan@example.com"
+            required
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Telefon <span style="font-weight:400;color:var(--muted)">(opcjonalnie)</span></label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+48 600 000 000"
+            autocomplete="tel"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Wiadomość</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Napisz, o co chciałbyś zapytać…"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%">
+          Wyślij zapytanie
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────── -->
+  <footer>
+    <p>
+      &copy; <span id="year"></span> Dom&Ogród Inwestycyjny.
+      Wszystkie prawa zastrzeżone.
+    </p>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple form submission handler
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn  = form.querySelector('[type="submit"]');
+      btn.textContent = '✅ Wysłano!';
+      btn.disabled = true;
+      form.reset();
+      setTimeout(() => {
+        btn.textContent = 'Wyślij zapytanie';
+        btn.disabled = false;
+      }, 4000);
+    }
+  </script>
+
+</body>
+</html>
