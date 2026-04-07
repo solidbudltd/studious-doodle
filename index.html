@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SOLIDBUD LTD – profesjonalne usługi budowlane i remontowe. Budownictwo mieszkaniowe, komercyjne i przemysłowe najwyższej jakości." />
+  <meta name="keywords" content="budowa, remonty, budownictwo, SOLIDBUD, firma budowlana, Polska" />
+  <title>SOLIDBUD LTD – Profesjonalne Usługi Budowlane</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="6" fill="#E8420A"/>
+            <path d="M6 24L16 8L26 24H6Z" fill="white" opacity="0.9"/>
+            <rect x="12" y="16" width="8" height="8" fill="white"/>
+          </svg>
+        </span>
+        SOLIDBUD <span class="nav__logo-ltd">LTD</span>
+      </a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item"><a href="#home" class="nav__link active">Strona główna</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">O nas</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">Usługi</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Realizacje</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn--primary nav__cta">Bezpłatna wycena</a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="container hero__content">
+      <span class="hero__badge">Ponad 15 lat doświadczenia</span>
+      <h1 class="hero__title">
+        Budujemy <span class="hero__title--accent">solidnie</span><br/>z pasją do jakości
+      </h1>
+      <p class="hero__subtitle">
+        SOLIDBUD LTD to renomowana firma budowlana świadcząca kompleksowe usługi – od fundamentów po wykończenia. Zaufało nam ponad 500 zadowolonych klientów.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg">Zamów bezpłatną wycenę</a>
+        <a href="#projects" class="btn btn--outline btn--lg">Zobacz nasze realizacje</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number">500+</span>
+          <span class="stat__label">Ukończonych projektów</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">15+</span>
+          <span class="stat__label">Lat doświadczenia</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">98%</span>
+          <span class="stat__label">Zadowolonych klientów</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">50+</span>
+          <span class="stat__label">Specjalistów w zespole</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>Przewiń w dół</span>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__image-wrapper">
+            <div class="about__image about__image--main">
+              <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="480" height="360" fill="#1a1a2e"/>
+                <!-- Sky -->
+                <rect width="480" height="200" fill="#1e3a5f"/>
+                <!-- Ground -->
+                <rect y="280" width="480" height="80" fill="#2d4a1e"/>
+                <!-- Building 1 -->
+                <rect x="40" y="80" width="100" height="200" fill="#2c5282"/>
+                <rect x="50" y="90" width="20" height="25" fill="#90cdf4" opacity="0.8"/>
+                <rect x="80" y="90" width="20" height="25" fill="#90cdf4" opacity="0.8"/>
+                <rect x="110" y="90" width="20" height="25" fill="#ffd700" opacity="0.9"/>
+                <rect x="50" y="130" width="20" height="25" fill="#90cdf4" opacity="0.8"/>
+                <rect x="80" y="130" width="20" height="25" fill="#ffd700" opacity="0.9"/>
+                <rect x="110" y="130" width="20" height="25" fill="#90cdf4" opacity="0.8"/>
+                <rect x="50" y="170" width="20" height="25" fill="#ffd700" opacity="0.9"/>
+                <rect x="80" y="170" width="20" height="25" fill="#90cdf4" opacity="0.8"/>
+                <rect x="110" y="170" width="20" height="25" fill="#90cdf4" opacity="0.8"/>
+                <!-- Building 2 (main, under construction) -->
+                <rect x="180" y="40" width="140" height="240" fill="#c05621"/>
+                <rect x="195" y="55" width="25" height="30" fill="#fbd38d" opacity="0.9"/>
+                <rect x="232" y="55" width="25" height="30" fill="#fbd38d" opacity="0.9"/>
+                <rect x="269" y="55" width="25" height="30" fill="#fbd38d" opacity="0.9"/>
+                <rect x="195" y="100" width="25" height="30" fill="#fbd38d" opacity="0.9"/>
+                <rect x="232" y="100" width="25" height="30" fill="#fc8181" opacity="0.8"/>
+                <rect x="269" y="100" width="25" height="30" fill="#fbd38d" opacity="0.9"/>
+                <rect x="195" y="145" width="25" height="30" fill="#fbd38d" opacity="0.9"/>
+                <rect x="232" y="145" width="25" height="30" fill="#fbd38d" opacity="0.9"/>
+                <rect x="269" y="145" width="25" height="30" fill="#fc8181" opacity="0.8"/>
+                <!-- Scaffold -->
+                <rect x="175" y="30" width="6" height="250" fill="#718096"/>
+                <rect x="319" y="30" width="6" height="250" fill="#718096"/>
+                <rect x="175" y="30" width="150" height="6" fill="#718096"/>
+                <rect x="175" y="80" width="150" height="4" fill="#718096"/>
+                <rect x="175" y="130" width="150" height="4" fill="#718096"/>
+                <rect x="175" y="180" width="150" height="4" fill="#718096"/>
+                <!-- Building 3 -->
+                <rect x="360" y="120" width="80" height="160" fill="#2d6a4f"/>
+                <rect x="372" y="133" width="18" height="22" fill="#95d5b2" opacity="0.8"/>
+                <rect x="402" y="133" width="18" height="22" fill="#95d5b2" opacity="0.8"/>
+                <rect x="372" y="168" width="18" height="22" fill="#ffd700" opacity="0.9"/>
+                <rect x="402" y="168" width="18" height="22" fill="#95d5b2" opacity="0.8"/>
+                <!-- Crane -->
+                <rect x="320" y="0" width="8" height="290" fill="#e53e3e"/>
+                <rect x="280" y="0" width="48" height="8" fill="#e53e3e"/>
+                <line x1="320" y1="8" x2="280" y2="0" stroke="#e53e3e" stroke-width="3"/>
+                <!-- SOLIDBUD text -->
+                <text x="240" y="330" font-family="Arial" font-weight="bold" font-size="18" fill="white" text-anchor="middle" opacity="0.7">SOLIDBUD LTD</text>
+              </svg>
+            </div>
+            <div class="about__badge-card">
+              <div class="about__badge-icon">🏆</div>
+              <div>
+                <strong>Certyfikowana firma</strong>
+                <span>ISO 9001:2015</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <div class="section__label">O firmie</div>
+          <h2 class="section__title">Budujemy przyszłość z solidnymi fundamentami</h2>
+          <p class="about__text">
+            SOLIDBUD LTD to firma budowlana z ponad 15-letnim doświadczeniem na rynku. Od 2009 roku realizujemy projekty budowlane na najwyższym poziomie, łącząc nowoczesne technologie z tradycyjnym rzemiosłem.
+          </p>
+          <p class="about__text">
+            Nasza kadra to wykwalifikowani specjaliści, którzy z pasją podchodzą do każdego zlecenia – niezależnie czy chodzi o budowę domu jednorodzinnego, kompleksu apartamentowego czy obiektu przemysłowego.
+          </p>
+
+          <div class="about__features">
+            <div class="feature">
+              <div class="feature__icon">✓</div>
+              <div>
+                <strong>Terminowość i rzetelność</strong>
+                <p>Realizujemy projekty zgodnie z harmonogramem i budżetem.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">✓</div>
+              <div>
+                <strong>Nowoczesne technologie</strong>
+                <p>Stosujemy najnowsze metody budowlane i materiały premium.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">✓</div>
+              <div>
+                <strong>Pełna gwarancja jakości</strong>
+                <p>Udzielamy wieloletnich gwarancji na nasze prace.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">✓</div>
+              <div>
+                <strong>Kompleksowa obsługa</strong>
+                <p>Od projektu po odbiór kluczy – wszystko pod jednym dachem.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--primary">Porozmawiajmy o Twoim projekcie</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section section--gray" id="services">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Nasze usługi</div>
+        <h2 class="section__title">Kompleksowe usługi budowlane</h2>
+        <p class="section__subtitle">Oferujemy pełen zakres usług budowlanych – od planowania po realizację i wykończenie.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="28" width="40" height="16" rx="2" fill="currentColor" opacity="0.15"/>
+              <rect x="8" y="16" width="32" height="12" rx="1" fill="currentColor" opacity="0.3"/>
+              <rect x="14" y="8" width="20" height="8" rx="1" fill="currentColor"/>
+              <rect x="18" y="32" width="12" height="12" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Budownictwo mieszkaniowe</h3>
+          <p class="service-card__text">Budujemy domy jednorodzinne, bliźniaki i apartamentowce. Kompleksowa realizacja od fundamentów po dach.</p>
+          <ul class="service-card__list">
+            <li>Domy jednorodzinne</li>
+            <li>Budynki wielorodzinne</li>
+            <li>Apartamenty premium</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="20" width="44" height="24" rx="2" fill="currentColor" opacity="0.15"/>
+              <rect x="6" y="12" width="36" height="8" fill="currentColor" opacity="0.3"/>
+              <rect x="2" y="8" width="44" height="4" fill="currentColor"/>
+              <rect x="10" y="24" width="8" height="10" fill="currentColor" opacity="0.5"/>
+              <rect x="30" y="24" width="8" height="10" fill="currentColor" opacity="0.5"/>
+              <rect x="20" y="28" width="8" height="16" fill="currentColor" opacity="0.7"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Budownictwo komercyjne</h3>
+          <p class="service-card__text">Biurowce, centra handlowe, hotele i obiekty usługowe. Realizujemy projekty dla sektora komercyjnego.</p>
+          <ul class="service-card__list">
+            <li>Biurowce i centra biznesowe</li>
+            <li>Obiekty handlowe</li>
+            <li>Hotele i pensjonaty</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="16" width="40" height="28" rx="2" fill="currentColor" opacity="0.15"/>
+              <rect x="8" y="8" width="6" height="36" fill="currentColor" opacity="0.4"/>
+              <rect x="34" y="8" width="6" height="36" fill="currentColor" opacity="0.4"/>
+              <rect x="4" y="8" width="40" height="8" fill="currentColor" opacity="0.7"/>
+              <rect x="16" y="20" width="16" height="24" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Obiekty przemysłowe</h3>
+          <p class="service-card__text">Hale produkcyjne, magazyny, zakłady przemysłowe. Specjalizujemy się w dużych obiektach kubaturowych.</p>
+          <ul class="service-card__list">
+            <li>Hale produkcyjne</li>
+            <li>Magazyny i centra logistyczne</li>
+            <li>Zakłady przemysłowe</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.1"/>
+              <path d="M12 24h24M24 12v24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M16 16l16 16M32 16L16 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Remonty i modernizacje</h3>
+          <p class="service-card__text">Kompleksowe remonty mieszkań, biur i obiektów użytkowych. Przywracamy przestrzeniom dawny blask lub nadajemy im nowy charakter.</p>
+          <ul class="service-card__list">
+            <li>Remonty mieszkań i domów</li>
+            <li>Modernizacja biur</li>
+            <li>Rewitalizacja obiektów</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="6" y="30" width="36" height="12" rx="2" fill="currentColor" opacity="0.2"/>
+              <path d="M24 6L8 30h32L24 6z" fill="currentColor" opacity="0.4"/>
+              <path d="M20 30v12M28 30v12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Infrastruktura drogowa</h3>
+          <p class="service-card__text">Budowa i modernizacja dróg, parkingów, chodników i infrastruktury zewnętrznej dla klientów indywidualnych i instytucjonalnych.</p>
+          <ul class="service-card__list">
+            <li>Drogi i parkingi</li>
+            <li>Chodniki i place</li>
+            <li>Kanalizacja i instalacje</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="8" y="8" width="32" height="32" rx="4" fill="currentColor" opacity="0.15"/>
+              <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Doradztwo i projektowanie</h3>
+          <p class="service-card__text">Oferujemy kompleksowe doradztwo budowlane, nadzór inwestorski oraz wsparcie na każdym etapie realizacji inwestycji.</p>
+          <ul class="service-card__list">
+            <li>Nadzór inwestorski</li>
+            <li>Kosztorysowanie</li>
+            <li>Konsultacje techniczne</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Nasze realizacje</div>
+        <h2 class="section__title">Wybrane projekty</h2>
+        <p class="section__subtitle">Poznaj wybrane inwestycje, które z powodzeniem zrealizowaliśmy dla naszych klientów.</p>
+      </div>
+
+      <div class="projects__filter">
+        <button class="filter-btn active" data-filter="all">Wszystkie</button>
+        <button class="filter-btn" data-filter="residential">Mieszkaniowe</button>
+        <button class="filter-btn" data-filter="commercial">Komercyjne</button>
+        <button class="filter-btn" data-filter="industrial">Przemysłowe</button>
+      </div>
+
+      <div class="projects__grid" id="projects-grid">
+
+        <div class="project-card" data-category="residential">
+          <div class="project-card__image project-card__image--1">
+            <div class="project-card__overlay">
+              <span class="project-card__category">Budownictwo mieszkaniowe</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Osiedle Zielone Wzgórza</h3>
+            <p class="project-card__meta">Warszawa, 2023 · 24 domy jednorodzinne</p>
+            <p class="project-card__text">Kompleksowe osiedle domów jednorodzinnych z infrastrukturą drogową i zielonymi przestrzeniami wspólnymi.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="commercial">
+          <div class="project-card__image project-card__image--2">
+            <div class="project-card__overlay">
+              <span class="project-card__category">Budownictwo komercyjne</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Centrum Biurowe Primus</h3>
+            <p class="project-card__meta">Kraków, 2022 · 8 000 m²</p>
+            <p class="project-card__text">Nowoczesne centrum biurowe klasy A z podziemnym parkingiem i zielonymi tarasami.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="industrial">
+          <div class="project-card__image project-card__image--3">
+            <div class="project-card__overlay">
+              <span class="project-card__category">Budownictwo przemysłowe</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Hala Produkcyjna AutoTech</h3>
+            <p class="project-card__meta">Wrocław, 2023 · 15 000 m²</p>
+            <p class="project-card__text">Nowoczesna hala produkcyjna z biurami i zapleczem socjalnym dla branży motoryzacyjnej.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="residential">
+          <div class="project-card__image project-card__image--4">
+            <div class="project-card__overlay">
+              <span class="project-card__category">Budownictwo mieszkaniowe</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Apartamenty Marina View</h3>
+            <p class="project-card__meta">Gdańsk, 2024 · 120 apartamentów</p>
+            <p class="project-card__text">Luksusowy kompleks apartamentowy z widokiem na morze, strefą SPA i podziemnym parkingiem.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="commercial">
+          <div class="project-card__image project-card__image--5">
+            <div class="project-card__overlay">
+              <span class="project-card__category">Budownictwo komercyjne</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Hotel Grand Residence</h3>
+            <p class="project-card__meta">Poznań, 2022 · 4-gwiazdkowy hotel</p>
+            <p class="project-card__text">Czterogwiazdkowy hotel konferencyjny z 180 pokojami, centrum konferencyjnym i restauracją.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="industrial">
+          <div class="project-card__image project-card__image--6">
+            <div class="project-card__overlay">
+              <span class="project-card__category">Infrastruktura</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Centrum Logistyczne EcoHub</h3>
+            <p class="project-card__meta">Łódź, 2023 · 25 000 m²</p>
+            <p class="project-card__text">Nowoczesne centrum logistyczne klasy A z systemem zarządzania energią i panelami fotowoltaicznymi.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects__cta">
+        <a href="#contact" class="btn btn--primary btn--lg">Porozmawiaj o swoim projekcie</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Opinie klientów</div>
+        <h2 class="section__title">Co mówią nasi klienci</h2>
+      </div>
+      <div class="testimonials__grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"SOLIDBUD LTD przekroczyło nasze oczekiwania. Dom został oddany na czas, a jakość wykonania jest nieporównywalna z innymi firmami. Gorąco polecam!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">MK</div>
+            <div>
+              <strong>Marek Kowalski</strong>
+              <span>Klient indywidualny, Warszawa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Profesjonalne podejście, świetna komunikacja i terminowość. Nasza hala produkcyjna powstała szybciej niż planowaliśmy i mieści się w budżecie."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">AN</div>
+            <div>
+              <strong>Anna Nowak</strong>
+              <span>Dyrektor operacyjny, AutoTech Sp. z o.o.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Inwestycja w centrum biurowe to nasze największe przedsięwzięcie. Dzięki SOLIDBUD wszystko przebiegło sprawnie. Polecamy każdemu inwestorowi."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">TW</div>
+            <div>
+              <strong>Tomasz Wiśniewski</strong>
+              <span>Prezes, Primus Invest S.A.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Kontakt</div>
+        <h2 class="section__title">Skontaktuj się z nami</h2>
+        <p class="section__subtitle">Napisz do nas lub zadzwoń – odpowiemy w ciągu 24 godzin i bezpłatnie wycenimy Twój projekt.</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <h3>Dane kontaktowe</h3>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Adres</strong>
+              <span>ul. Budowlana 15<br/>00-001 Warszawa, Polska</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 5 5l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Telefon</strong>
+              <a href="tel:+48221234567">+48 22 123 45 67</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:biuro@solidbud.pl">biuro@solidbud.pl</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Godziny pracy</strong>
+              <span>Pon – Pt: 8:00 – 17:00<br/>Sob: 9:00 – 13:00</span>
+            </div>
+          </div>
+
+          <div class="contact__social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__form-wrapper">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Imię i nazwisko *</label>
+                <input type="text" id="name" name="name" placeholder="Jan Kowalski" required />
+                <span class="form-error" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Adres e-mail *</label>
+                <input type="email" id="email" name="email" placeholder="jan@firma.pl" required />
+                <span class="form-error" id="email-error"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="+48 600 000 000" />
+              </div>
+              <div class="form-group">
+                <label for="service">Rodzaj usługi</label>
+                <select id="service" name="service">
+                  <option value="">Wybierz usługę...</option>
+                  <option value="residential">Budownictwo mieszkaniowe</option>
+                  <option value="commercial">Budownictwo komercyjne</option>
+                  <option value="industrial">Obiekty przemysłowe</option>
+                  <option value="renovation">Remonty i modernizacje</option>
+                  <option value="infrastructure">Infrastruktura drogowa</option>
+                  <option value="consulting">Doradztwo budowlane</option>
+                  <option value="other">Inne</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Wiadomość *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Opisz swój projekt lub zadaj pytanie..." required></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span>Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie. *</span>
+              </label>
+              <span class="form-error" id="consent-error"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span class="btn__text">Wyślij zapytanie</span>
+              <span class="btn__loading" hidden>Wysyłanie...</span>
+            </button>
+            <div class="form-success" id="form-success" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Dziękujemy! Skontaktujemy się z Tobą w ciągu 24 godzin.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="nav__logo footer__logo">
+            <span class="nav__logo-icon">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="32" height="32" rx="6" fill="#E8420A"/>
+                <path d="M6 24L16 8L26 24H6Z" fill="white" opacity="0.9"/>
+                <rect x="12" y="16" width="8" height="8" fill="white"/>
+              </svg>
+            </span>
+            SOLIDBUD <span class="nav__logo-ltd">LTD</span>
+          </a>
+          <p class="footer__tagline">Budujemy solidnie – od fundamentów po klucze.</p>
+          <p class="footer__legal">NIP: 123-456-78-90 | KRS: 0000123456<br/>Kapitał zakładowy: 500 000 PLN</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Usługi</h4>
+          <ul>
+            <li><a href="#services">Budownictwo mieszkaniowe</a></li>
+            <li><a href="#services">Budownictwo komercyjne</a></li>
+            <li><a href="#services">Obiekty przemysłowe</a></li>
+            <li><a href="#services">Remonty i modernizacje</a></li>
+            <li><a href="#services">Infrastruktura drogowa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Firma</h4>
+          <ul>
+            <li><a href="#about">O firmie</a></li>
+            <li><a href="#projects">Realizacje</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#">Kariera</a></li>
+            <li><a href="#">Przetargi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Certyfikaty</h4>
+          <div class="footer__certs">
+            <div class="cert-badge">ISO 9001</div>
+            <div class="cert-badge">ISO 14001</div>
+            <div class="cert-badge">OHSAS 18001</div>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">Licencjonowany wykonawca robót budowlanych</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2024 SOLIDBUD LTD. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Polityka prywatności</a>
+          <a href="#">Cookies</a>
+          <a href="#">RODO</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Wróć na górę" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
