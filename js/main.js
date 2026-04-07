@@ -142,7 +142,8 @@ if (contactForm) {
     // Validate email
     const emailField = contactForm.querySelector('#email');
     const emailError = contactForm.querySelector('#email-error');
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // RFC 5322-inspired pattern: rejects consecutive dots, leading/trailing dots in domain
+    const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
     if (!emailField.value.trim() || !emailPattern.test(emailField.value.trim())) {
       showError(emailField, emailError, 'Podaj prawidłowy adres e-mail.');
       isValid = false;
@@ -182,7 +183,8 @@ if (contactForm) {
     if (btnText) btnText.hidden = true;
     if (btnLoading) btnLoading.hidden = false;
 
-    // Simulate network request (replace with actual fetch in production)
+    // TODO: Replace with actual fetch() POST to your backend/API endpoint in production.
+    // This simulated delay mimics the loading state for demonstration purposes.
     await new Promise(resolve => setTimeout(resolve, 1200));
 
     submitBtn.disabled = false;
