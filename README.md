@@ -42,7 +42,7 @@ Od inteligentnego oświetlenia, przez automatyczne zarządzanie dostępem, po zd
 
 Jesteśmy otwarci na współpracę z deweloperami, architektami, integratorami technologii i inwestorami, którzy podzielają naszą wizję. Razem możemy zmieniać to, jak ludzie doświadczają przestrzeni, w której żyją i pracują.
 
-📩 Skontaktuj się z nami: **contact@solidbud.pl**  
+📩 Skontaktuj się z nami: **contact@solidbud.co.uk**  
 🌐 Strona internetowa: *[wkrótce / coming soon]*
 
 ---
