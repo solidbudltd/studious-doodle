@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SOLIDBUD LTD sprzedaje i montuje biopominki bioetanolowe na terenie całej Wielkiej Brytanii. Modele ścienne, wolnostojące i wbudowane — bez komina, bez dymu, z profesjonalnym montażem." />
+  <title>Biokominki — Sprzedaż i Montaż UK | SolidBud Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://www.solidbud.co.uk/kominki" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="SolidBud Ltd" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SolidBud Ltd" />
+  <meta property="og:title" content="Biokominki — Sprzedaż i Montaż UK | SolidBud Ltd" />
+  <meta property="og:description" content="SOLIDBUD sprzedaje i montuje biokominki bioetanolowe na terenie całej Wielkiej Brytanii. Modele ścienne, wolnostojące i wbudowane." />
+  <meta property="og:url" content="https://www.solidbud.co.uk/kominki" />
+  <style>
+    /* ── Fireplace page–specific overrides ─────────────────────── */
+    .fire-hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--sp-xl) var(--sp-md);
+      background: radial-gradient(ellipse 80% 60% at 50% 30%,
+        rgba(212, 100, 30, 0.18) 0%,
+        transparent 70%),
+        var(--clr-dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .fire-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle 300px at 20% 80%, rgba(212,168,67,.07) 0%, transparent 70%),
+        radial-gradient(circle 200px at 80% 20%, rgba(212,100,30,.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .fire-hero-content {
+      position: relative;
+      max-width: 860px;
+    }
+    .fire-hero-flame {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      animation: flicker 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes flicker {
+      0%   { filter: drop-shadow(0 0 12px rgba(255,120,20,.6)); transform: scale(1); }
+      50%  { filter: drop-shadow(0 0 24px rgba(255,160,30,.8)); transform: scale(1.04); }
+      100% { filter: drop-shadow(0 0 16px rgba(255,100,10,.5)); transform: scale(.98); }
+    }
+    .fire-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      line-height: 1.15;
+      color: var(--clr-white);
+      margin-bottom: 1.5rem;
+    }
+    .fire-hero h1 em {
+      font-style: italic;
+      color: var(--clr-gold);
+    }
+    .fire-hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--clr-grey-400);
+      max-width: 620px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .fire-hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+    .fire-badge {
+      background: rgba(212,168,67,.1);
+      border: 1px solid rgba(212,168,67,.3);
+      color: var(--clr-gold-light);
+      padding: .4rem 1rem;
+      border-radius: 99px;
+      font-size: .85rem;
+      font-weight: 600;
+    }
+
+    /* ── Why SolidBud strip ─────────────────────────────────────── */
+    .why-strip {
+      background: var(--clr-dark-2);
+      border-top: 1px solid rgba(212,168,67,.12);
+      border-bottom: 1px solid rgba(212,168,67,.12);
+      padding: var(--sp-lg) var(--sp-md);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--sp-md);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .why-card {
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    .why-icon {
+      font-size: 2.2rem;
+      margin-bottom: .75rem;
+      display: block;
+    }
+    .why-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--clr-gold);
+      margin-bottom: .4rem;
+    }
+    .why-desc {
+      font-size: .875rem;
+      color: var(--clr-grey-400);
+      line-height: 1.6;
+    }
+
+    /* ── Category nav ───────────────────────────────────────────── */
+    .cat-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      justify-content: center;
+      padding: var(--sp-md) var(--sp-md) 0;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .cat-btn {
+      background: var(--clr-dark-3);
+      border: 1px solid var(--clr-dark-4);
+      color: var(--clr-grey-400);
+      padding: .55rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: .9rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      transition: all var(--dur) var(--ease);
+      text-decoration: none;
+    }
+    .cat-btn:hover,
+    .cat-btn.active {
+      background: rgba(212,168,67,.12);
+      border-color: rgba(212,168,67,.4);
+      color: var(--clr-gold-light);
+    }
+
+    /* ── Product cards ──────────────────────────────────────────── */
+    .products-section {
+      padding: var(--sp-lg) var(--sp-md);
+    }
+    .products-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .products-category-label {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .products-category-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(212,168,67,.2);
+    }
+    .cat-label-text {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      white-space: nowrap;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: var(--sp-lg);
+    }
+    .product-card {
+      background: var(--clr-dark-2);
+      border: 1px solid var(--clr-dark-4);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(212,168,67,.3);
+    }
+    .product-visual {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      background: var(--clr-dark-3);
+      position: relative;
+      overflow: hidden;
+    }
+    .product-visual::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 60%, rgba(212,100,30,.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .product-visual-emoji {
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 8px 24px rgba(212,100,30,.5));
+    }
+    .product-badge-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(212,168,67,.15);
+      border: 1px solid rgba(212,168,67,.4);
+      color: var(--clr-gold-light);
+      padding: .25rem .75rem;
+      border-radius: 99px;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      z-index: 2;
+    }
+    .product-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-type {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      margin-bottom: .5rem;
+    }
+    .product-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--clr-white);
+      margin-bottom: .75rem;
+      line-height: 1.3;
+    }
+    .product-desc {
+      font-size: .875rem;
+      color: var(--clr-grey-400);
+      line-height: 1.65;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+    .product-specs {
+      list-style: none;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+    }
+    .product-specs li {
+      font-size: .8rem;
+      color: var(--clr-grey-400);
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .product-specs li::before {
+      content: '✓';
+      color: var(--clr-gold);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .product-price {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--clr-gold-light);
+      margin-bottom: 1rem;
+    }
+    .product-price span {
+      font-size: .8rem;
+      font-weight: 400;
+      color: var(--clr-grey-400);
+    }
+    .product-cta {
+      display: block;
+      text-align: center;
+      background: rgba(212,168,67,.1);
+      border: 1px solid rgba(212,168,67,.35);
+      color: var(--clr-gold-light);
+      padding: .65rem 1rem;
+      border-radius: 8px;
+      font-size: .875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all var(--dur) var(--ease);
+    }
+    .product-cta:hover {
+      background: rgba(212,168,67,.2);
+      border-color: var(--clr-gold);
+      color: var(--clr-gold);
+    }
+
+    /* ── How it works ───────────────────────────────────────────── */
+    .how-section {
+      background: var(--clr-dark-2);
+      padding: var(--sp-xl) var(--sp-md);
+      border-top: 1px solid rgba(212,168,67,.1);
+    }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: var(--max-width);
+      margin: 3rem auto 0;
+      counter-reset: steps;
+    }
+    .how-step {
+      text-align: center;
+      position: relative;
+    }
+    .step-num {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(212,168,67,.12);
+      border: 2px solid rgba(212,168,67,.4);
+      color: var(--clr-gold);
+      font-size: 1.2rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .step-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--clr-white);
+      margin-bottom: .5rem;
+    }
+    .step-text {
+      font-size: .85rem;
+      color: var(--clr-grey-400);
+      line-height: 1.6;
+    }
+
+    /* ── Promo banner ───────────────────────────────────────────── */
+    .promo-banner {
+      background: linear-gradient(135deg, rgba(212,168,67,.12) 0%, rgba(212,100,30,.08) 100%);
+      border: 1px solid rgba(212,168,67,.25);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .promo-banner h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      color: var(--clr-white);
+      margin-bottom: 1rem;
+    }
+    .promo-banner p {
+      color: var(--clr-grey-400);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    .promo-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* ── Responsive tweaks ──────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .products-grid { grid-template-columns: 1fr; }
+      .how-steps { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 400px) {
+      .how-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-solid">Solid</span><span class="logo-bud">Bud</span>
+        <span class="logo-ltd">Ltd</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">O nas</a></li>
+        <li><a href="index.html#pillars">Usługi</a></li>
+        <li><a href="index.html#projects">Projekty</a></li>
+        <li><a href="index.html#modular">Domy modułowe</a></li>
+        <li><a href="kominki.html" class="active">Biokominki</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Kontakt</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ──────────────────────────────────────────────── -->
+    <section class="fire-hero" id="hero">
+      <div class="fire-hero-content">
+        <div class="fire-hero-flame">🔥</div>
+        <p class="section-eyebrow">Sprzedaż i Montaż · Cała Wielka Brytania</p>
+        <h1>
+          Prawdziwy ogień.<br />
+          <em>Bez komina.</em><br />
+          Z profesjonalnym<br />montażem SolidBud.
+        </h1>
+        <p class="fire-hero-subtitle">
+          SOLIDBUD LTD dostarcza i montuje biokominki bioetanolowe w domach
+          i mieszkaniach na terenie całej Wielkiej Brytanii. Nowoczesny design,
+          prawdziwy płomień, zero dymu — gotowe w jeden dzień.
+        </p>
+        <div class="fire-hero-badges">
+          <span class="fire-badge">🇬🇧 Cała Wielka Brytania</span>
+          <span class="fire-badge">🔧 Montaż w 1 dzień</span>
+          <span class="fire-badge">🌿 Eco-friendly</span>
+          <span class="fire-badge">🏆 Bez komina i dymu</span>
+          <span class="fire-badge">✅ EU Safety Standards</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#produkty" class="btn btn-primary">Zobacz produkty</a>
+          <a href="#kontakt" class="btn btn-outline">Zapytaj o wycenę</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY SOLIDBUD ─────────────────────────────────────── -->
+    <section class="why-strip" id="dlaczego">
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon">🔥</span>
+          <p class="why-title">Prawdziwy płomień</p>
+          <p class="why-desc">Żywy ogień z bioetanolu — autentyczne ciepło i atmosfera bez żadnych kompromisów.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🏗️</span>
+          <p class="why-title">Profesjonalny montaż</p>
+          <p class="why-desc">Nasz zespół montuje biokominek u Ciebie w domu — precyzyjnie, sprawnie, bez bałaganu.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🌿</span>
+          <p class="why-title">Ekologiczne spalanie</p>
+          <p class="why-desc">Bioetanol spala się czysto — bez dymu, sadzy, popiołu ani szkodliwych substancji.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🏠</span>
+          <p class="why-title">Bez przebudowy</p>
+          <p class="why-desc">Nie potrzebujesz komina ani wentylacji. Biokominek pasuje do każdego wnętrza — od razu.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🇬🇧</span>
+          <p class="why-title">Cała Wielka Brytania</p>
+          <p class="why-desc">Obsługujemy klientów w całej Anglii, Walii, Szkocji i Irlandii Północnej.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">💬</span>
+          <p class="why-title">Wsparcie po sprzedaży</p>
+          <p class="why-desc">Służymy radą przy doborze paliwa, konserwacji i użytkowaniu — przez cały okres eksploatacji.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PRODUCTS ─────────────────────────────────────────── -->
+    <section class="products-section section" id="produkty">
+      <div class="products-container">
+
+        <div class="section-header">
+          <p class="section-eyebrow">Nasza oferta</p>
+          <h2 class="section-title">
+            Biokominki, które<br />
+            <em>SolidBud sprzedaje i montuje</em><br />
+            na terenie UK
+          </h2>
+          <p class="section-intro">
+            Oferujemy pełną gamę biokominków bioetanolowych — modele ścienne,
+            wolnostojące i wbudowane. Każdy produkt dostarczamy bezpośrednio
+            do Twojego domu i montujemy z gwarancją SolidBud.
+          </p>
+        </div>
+
+        <!-- Quick category nav -->
+        <div class="cat-nav">
+          <a href="#scienne" class="cat-btn">🖼️ Ścienne</a>
+          <a href="#wolnostojace" class="cat-btn">🏛️ Wolnostojące</a>
+          <a href="#wbudowane" class="cat-btn">🧱 Wbudowane / Wkłady</a>
+          <a href="#akcesoria" class="cat-btn">⚗️ Bioetanol &amp; Akcesoria</a>
+        </div>
+
+        <!-- ── WALL-MOUNTED ──────────────────────────────────── -->
+        <div id="scienne" style="padding-top: 3rem;">
+          <div class="products-category-label">
+            <span class="cat-label-text">🖼️ Biokominki Ścienne (Wiszące)</span>
+          </div>
+          <p style="color: var(--clr-grey-400); font-size: .95rem; margin-bottom: 2rem; max-width: 680px;">
+            Biokominki ścienne to eleganckie rozwiązanie dla nowoczesnych wnętrz.
+            Montujemy je na ścianie jak obraz — bez ingerencji w instalacje budynku.
+            Zajmują minimum przestrzeni, dostarczając maksimum efektu wizualnego.
+          </p>
+          <div class="products-grid">
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🔥</span>
+                <span class="product-badge-tag">Bestseller</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Biokominek Ścienny</p>
+                <h3 class="product-name">Biokominek Wiszący 1200×400<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Biały Połysk ze Szkłem</small></h3>
+                <p class="product-desc">
+                  Duży, imponujący biokominek ścienny o wymiarach 120×40 cm. Lakierowany biały połysk,
+                  przednia szyba ze szkła hartowanego. Idealny jako centralny punkt salonu lub jadalni.
+                  SOLIDBUD montuje go bezpiecznie na każdej ścianie nośnej — tego samego dnia.
+                </p>
+                <ul class="product-specs">
+                  <li>Wymiary: 1200×400 mm</li>
+                  <li>Wykończenie: biały połysk + szkło hartowane</li>
+                  <li>Stal lakierowana proszkowo</li>
+                  <li>Czas palenia: do 5 godz. na napełnienie</li>
+                  <li>Montaż ścienny w zestawie</li>
+                </ul>
+                <p class="product-price">od £ 379 <span>+ montaż SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o dostępność →</a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🔥</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Biokominek Ścienny</p>
+                <h3 class="product-name">Biokominek Wiszący 650×400<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Biały Połysk ze Szkłem</small></h3>
+                <p class="product-desc">
+                  Kompaktowy model ścienny o wymiarach 65×40 cm — doskonały do mniejszych pomieszczeń,
+                  sypialni lub gabinetu. Ta sama jakość wykonania co większy model: stal, biały połysk,
+                  szkło hartowane. Montowany przez SOLIDBUD w jedno przedpołudnie.
+                </p>
+                <ul class="product-specs">
+                  <li>Wymiary: 650×400 mm</li>
+                  <li>Wykończenie: biały połysk + szkło hartowane</li>
+                  <li>Stal lakierowana proszkowo</li>
+                  <li>Czas palenia: do 3,5 godz. na napełnienie</li>
+                  <li>Wsporniki montażowe w zestawie</li>
+                </ul>
+                <p class="product-price">od £ 289 <span>+ montaż SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o dostępność →</a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🔥</span>
+                <span class="product-badge-tag">Czarny Matte</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Biokominek Ścienny</p>
+                <h3 class="product-name">Biokominek BOX Ścienny 65 cm<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte — Stal Skandynawska</small></h3>
+                <p class="product-desc">
+                  Minimalistyczny biokominek ścienny ze szwedzkiej stali proszkowanej w kolorze
+                  głębokiej czerni. Liniowy palnik ze stali nierdzewnej, szczelne boki
+                  zwiększające bezpieczeństwo. Pasuje idealnie do loftowych i industrialnych wnętrz.
+                  Montaż SolidBud — bezpiecznie i estetycznie.
+                </p>
+                <ul class="product-specs">
+                  <li>Materiał: szwedzka stal + lakier proszkowy matte</li>
+                  <li>Palnik: stal nierdzewna, liniowy</li>
+                  <li>Szczelne boki — pełne bezpieczeństwo</li>
+                  <li>Regulacja wielkości płomienia</li>
+                  <li>Brak komina i wentylacji mechanicznej</li>
+                </ul>
+                <p class="product-price">od £ 319 <span>+ montaż SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o dostępność →</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── FREESTANDING ─────────────────────────────────────── -->
+        <div id="wolnostojace" style="padding-top: 1rem;">
+          <div class="products-category-label">
+            <span class="cat-label-text">🏛️ Biokominki Wolnostojące</span>
+          </div>
+          <p style="color: var(--clr-grey-400); font-size: .95rem; margin-bottom: 2rem; max-width: 680px;">
+            Biokominki wolnostojące to najbardziej elastyczne rozwiązanie — możesz postawić
+            je w dowolnym miejscu i przesunąć, gdy zmienisz aranżację. SOLIDBUD dostarcza
+            i uruchamia każdy model pod klucz.
+          </p>
+          <div class="products-grid">
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🏛️</span>
+                <span class="product-badge-tag">Mobilny</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Biokominek Wolnostojący</p>
+                <h3 class="product-name">Biokominek Wolnostojący HOME<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matowy Strukturalny</small></h3>
+                <p class="product-desc">
+                  Klasyczny biokominek wolnostojący w kolorze czarnym strukturalnym matowym.
+                  Elegancka forma, solidna konstrukcja — może stać przy ścianie lub
+                  pośrodku pokoju jako element dekoracyjny. Nie wymaga żadnego montażu stałego.
+                  Idealny dla najemców i właścicieli, którzy cenią elastyczność.
+                </p>
+                <ul class="product-specs">
+                  <li>Wykończenie: czarny matowy strukturalny</li>
+                  <li>Materiał: stal lakierowana + stainless steel palnik</li>
+                  <li>Mobilny — bez instalacji stałej</li>
+                  <li>Ogrzewanie uzupełniające + efekt dekoracyjny</li>
+                  <li>Dostawa i uruchomienie przez SOLIDBUD</li>
+                </ul>
+                <p class="product-price">od £ 319 <span>+ dostawa SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o dostępność →</a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🏛️</span>
+                <span class="product-badge-tag">Ze Szkłem 360°</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Biokominek Wolnostojący</p>
+                <h3 class="product-name">Biokominek Wolnostojący ze Szkłem 700<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte z Szybą Panoramiczną</small></h3>
+                <p class="product-desc">
+                  Spektakularny biokominek wolnostojący z panoramiczną szybą ze szkła hartowanego
+                  o szerokości 700 mm. Ogień widoczny z każdej strony — prawdziwy punkt centralny
+                  każdego salonu. Czarny mat, prosta bryła, niepowtarzalny efekt wizualny.
+                  Dostarczamy i ustawiamy w wybranym przez Ciebie miejscu.
+                </p>
+                <ul class="product-specs">
+                  <li>Szerokość szyby: 700 mm</li>
+                  <li>Szkło hartowane — bezpieczne i trwałe</li>
+                  <li>Widoczność ognia 360°</li>
+                  <li>Wykończenie: czarny matte</li>
+                  <li>Czas palenia: do 5 godz. na napełnienie</li>
+                </ul>
+                <p class="product-price">od £ 549 <span>+ dostawa SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o dostępność →</a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🏛️</span>
+                <span class="product-badge-tag">Inteligentny</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Biokominek Wolnostojący</p>
+                <h3 class="product-name">Biokominek Wolnostojący SMART<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Biały Matowy Strukturalny + Automatyczny Palnik</small></h3>
+                <p class="product-desc">
+                  Nowoczesny biokominek wolnostojący z automatycznym palnikiem Smart — zapłon
+                  i gaszenie pilotem lub aplikacją. Biały mat strukturalny, smukła sylwetka.
+                  Idealny wybór dla tych, którzy cenią komfort obsługi i nowoczesny design.
+                  SOLIDBUD dostarcza, konfiguruje i instruuje z obsługi.
+                </p>
+                <ul class="product-specs">
+                  <li>Automatyczny palnik — zapłon pilotem/aplikacją</li>
+                  <li>Wykończenie: biały matte strukturalny</li>
+                  <li>Regulacja płomienia elektroniczna</li>
+                  <li>Czujnik CO₂ i automatyczne wyłączanie</li>
+                  <li>Pełna konfiguracja przez SOLIDBUD</li>
+                </ul>
+                <p class="product-price">od £ 749 <span>+ dostawa SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o dostępność →</a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🏛️</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Biokominek Wolnostojący</p>
+                <h3 class="product-name">Biokominek Wolnostojący ONLY<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte — Wersja Podstawowa</small></h3>
+                <p class="product-desc">
+                  Prosta, elegancka forma dla tych, którzy cenią minimalizm. Model ONLY
+                  to czysty czarny mat, palnik w standardzie ręcznym i najwyższa jakość
+                  wykonania. Bez zbędnych dodatków — sam ogień i design.
+                  Dostarczamy na terenie całej Wielkiej Brytanii.
+                </p>
+                <ul class="product-specs">
+                  <li>Wykończenie: czarny matte</li>
+                  <li>Palnik ręczny — klasyczna obsługa</li>
+                  <li>Lekka konstrukcja — łatwe przestawianie</li>
+                  <li>Kompatybilny z bioetanolem 96%+</li>
+                  <li>Dostawa + instruktaż przez SOLIDBUD</li>
+                </ul>
+                <p class="product-price">od £ 279 <span>+ dostawa SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o dostępność →</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── BUILT-IN / INSERTS ───────────────────────────────── -->
+        <div id="wbudowane" style="padding-top: 1rem;">
+          <div class="products-category-label">
+            <span class="cat-label-text">🧱 Biokominki Wbudowane i Wkłady</span>
+          </div>
+          <p style="color: var(--clr-grey-400); font-size: .95rem; margin-bottom: 2rem; max-width: 680px;">
+            Biokominki wbudowane i wkłady kominkowe integrują się ze ścianą lub
+            istniejącym paleniskiem — dając efekt nieodróżnialny od klasycznego kominka.
+            To nasza specjalność: SOLIDBUD muruje, adaptuje i wykańcza całą obudowę.
+          </p>
+          <div class="products-grid">
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🧱</span>
+                <span class="product-badge-tag">Polecamy</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Wkład / Wbudowany</p>
+                <h3 class="product-name">Wkład Kominkowy 100 cm<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte ze Szkłem Hartowanym</small></h3>
+                <p class="product-desc">
+                  Największy wkład w naszej ofercie — szerokość 100 cm, efektowna szyba
+                  ze szkła hartowanego, wykończenie w czarnym macie. Wpasowujemy go
+                  w ścianę, niszę lub istniejące palenisko. SOLIDBUD projektuje obudowę,
+                  montuje wkład i wykańcza otoczenie pod klucz.
+                </p>
+                <ul class="product-specs">
+                  <li>Szerokość: 100 cm</li>
+                  <li>Wykończenie: czarny matte + szkło hartowane</li>
+                  <li>Zabudowa we wnęce lub ścianie</li>
+                  <li>Efekt klasycznego kominka — bez komina</li>
+                  <li>SOLIDBUD wykonuje pełną zabudowę</li>
+                </ul>
+                <p class="product-price">od £ 549 <span>+ montaż i zabudowa SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o projekt i wycenę →</a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🧱</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Wkład / Wbudowany</p>
+                <h3 class="product-name">Wkład Kominkowy 65 cm<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte ze Szkłem Hartowanym</small></h3>
+                <p class="product-desc">
+                  Kompaktowy wkład kominkowy 65 cm — doskonały do zabudowy w mniejszych
+                  wnętrzach, sypialniach, biurach czy mieszkaniach. Ten sam standard
+                  wykonania co model 100 cm. SOLIDBUD integruje wkład ze ścianą
+                  lub adaptuje istniejące palenisko.
+                </p>
+                <ul class="product-specs">
+                  <li>Szerokość: 65 cm</li>
+                  <li>Wykończenie: czarny matte + szkło hartowane</li>
+                  <li>Idealne do małych i średnich pomieszczeń</li>
+                  <li>Montaż we wnęce, ścianie lub starym palenisku</li>
+                  <li>Pełna obsługa montażowa SOLIDBUD</li>
+                </ul>
+                <p class="product-price">od £ 369 <span>+ montaż i zabudowa SOLIDBUD</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o projekt i wycenę →</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── ACCESSORIES ──────────────────────────────────────── -->
+        <div id="akcesoria" style="padding-top: 1rem;">
+          <div class="products-category-label">
+            <span class="cat-label-text">⚗️ Bioetanol i Akcesoria</span>
+          </div>
+          <p style="color: var(--clr-grey-400); font-size: .95rem; margin-bottom: 2rem; max-width: 680px;">
+            Dostarczamy również bioetanol wysokiej jakości (96%+) oraz akcesoria
+            kominkowe. Wszystko zamówisz razem z kominkiem lub osobno — z dostawą
+            na terenie UK.
+          </p>
+          <div class="products-grid">
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">⚗️</span>
+                <span class="product-badge-tag">Do każdego modelu</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Paliwo Ekologiczne</p>
+                <h3 class="product-name">Bioetanol 96%+ — Paliwo do Biokominków</h3>
+                <p class="product-desc">
+                  Wysokiej jakości bioetanol do wszystkich modeli biokominków.
+                  Czyste, ekologiczne spalanie — bez dymu, bez sadzy, bez zapachu.
+                  Dostępny w opakowaniach 5 l, 10 l i 20 l. Zamawiaj razem
+                  z kominkiem lub jako uzupełnienie zapasów.
+                </p>
+                <ul class="product-specs">
+                  <li>Stężenie: 96%+ — optymalne dla biokominków</li>
+                  <li>Opakowania: 5 l, 10 l, 20 l</li>
+                  <li>Certyfikowane EU — bezpieczne i czyste</li>
+                  <li>Brak dymu, sadzy i nieprzyjemnych zapachów</li>
+                  <li>Dostawa na terenie całej Wielkiej Brytanii</li>
+                </ul>
+                <p class="product-price">od £ 24 <span>/ 5 litrów</span></p>
+                <a href="#kontakt" class="product-cta">Zamów lub zapytaj →</a>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-visual">
+                <span class="product-visual-emoji">🧰</span>
+              </div>
+              <div class="product-body">
+                <p class="product-type">Akcesoria Kominkowe</p>
+                <h3 class="product-name">Zestaw Akcesoriów do Biokominka</h3>
+                <p class="product-desc">
+                  Kompletny zestaw akcesoriów: szczypce do palnika, lejek do napełniania,
+                  podkładka ochronna, kamienie dekoracyjne. Wszystko, czego potrzebujesz
+                  do wygodnej i bezpiecznej obsługi biokominka na co dzień.
+                </p>
+                <ul class="product-specs">
+                  <li>Szczypce do palnika ze stali nierdzewnej</li>
+                  <li>Lejek z zamknięciem — bezpieczne napełnianie</li>
+                  <li>Kamienie dekoracyjne (biały / czarny / mix)</li>
+                  <li>Podkładka ochronna pod kominek</li>
+                  <li>Dostawa z kominkiem lub osobno</li>
+                </ul>
+                <p class="product-price">od £ 39 <span>/ zestaw</span></p>
+                <a href="#kontakt" class="product-cta">Zapytaj o dostępność →</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── HOW IT WORKS ─────────────────────────────────────── -->
+    <section class="how-section section" id="jak-dzialamy">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Jak pracujemy</p>
+          <h2 class="section-title">Od zamówienia<br /><em>do pierwszego ognia</em></h2>
+          <p class="section-intro">
+            SOLIDBUD zajmuje się wszystkim — od doradztwa w doborze modelu,
+            przez dostawę, aż po profesjonalny montaż i instruktaż obsługi.
+            Nie musisz nic robić — tylko cieszyć się ogniem.
+          </p>
+        </div>
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="step-num">01</div>
+            <p class="step-title">Wybierz model</p>
+            <p class="step-text">Skontaktuj się z nami — pomożemy dobrać kominek do Twojego wnętrza, budżetu i oczekiwań.</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num">02</div>
+            <p class="step-title">Potwierdź zamówienie</p>
+            <p class="step-text">Ustalamy termin dostawy i montażu. Płatność z góry lub w ratach — do uzgodnienia.</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num">03</div>
+            <p class="step-title">Dostawa do domu</p>
+            <p class="step-text">Dostarczamy kominek bezpośrednio na Twój adres na terenie całej Wielkiej Brytanii.</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num">04</div>
+            <p class="step-title">Profesjonalny montaż</p>
+            <p class="step-text">Nasz zespół montuje i instaluje kominek — ścienny, wolnostojący lub wbudowany — precyzyjnie i estetycznie.</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num">05</div>
+            <p class="step-title">Instruktaż i odbiór</p>
+            <p class="step-text">Pokazujemy jak bezpiecznie obsługiwać i napełniać kominek. Wychodzimy dopiero gdy jesteś w 100% zadowolony.</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num">06</div>
+            <p class="step-title">Wsparcie po sprzedaży</p>
+            <p class="step-text">Dostępni przez cały czas — pytania, serwis, dostawy bioetanolu — SOLIDBUD jest zawsze do Twojej dyspozycji.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROMO / CTA ───────────────────────────────────────── -->
+    <section class="section" id="kontakt" style="padding: var(--sp-xl) var(--sp-md);">
+      <div class="container">
+        <div class="promo-banner">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">🔥</div>
+          <h2>Zamów biokominek<br />z montażem SOLIDBUD</h2>
+          <p>
+            Skontaktuj się z nami — bezpłatna konsultacja, pomoc w doborze modelu
+            i wycena montażu. Obsługujemy klientów w całej Anglii, Walii, Szkocji
+            i Irlandii Północnej.
+          </p>
+          <div class="promo-actions">
+            <a href="mailto:contact@solidbud.co.uk" class="btn btn-primary">📩 Napisz do nas</a>
+            <a href="index.html#contact" class="btn btn-outline">Formularz kontaktowy</a>
+          </div>
+          <p style="margin-top:1.5rem;font-size:.85rem;color:var(--clr-grey-600);">
+            📧 contact@solidbud.co.uk &nbsp;·&nbsp; 🌐 www.solidbud.co.uk<br />
+            Czas odpowiedzi: do 1 dnia roboczego
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-solid">Solid</span><span class="logo-bud">Bud</span>
+          <span class="logo-ltd">Ltd</span>
+        </a>
+        <p>Solid foundations. Intelligent future.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html#about">O nas</a>
+        <a href="index.html#pillars">Usługi</a>
+        <a href="index.html#projects">Projekty</a>
+        <a href="index.html#modular">Domy modułowe</a>
+        <a href="kominki.html">Biokominki</a>
+        <a href="index.html#contact">Kontakt</a>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> SolidBud Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ─── BACK TO TOP ─────────────────────────────────────────── -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ─── COOKIE BANNER ───────────────────────────────────────── -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" hidden>
+    <div class="cookie-inner container">
+      <p class="cookie-text">
+        🍪 Używamy plików cookie, aby poprawić komfort korzystania z naszej strony.
+        Kontynuując, zgadzasz się na naszą <a href="#" class="cookie-link">Politykę prywatności</a>.
+      </p>
+      <div class="cookie-actions">
+        <button class="btn btn-outline btn--sm" id="cookie-decline">Odrzuć</button>
+        <button class="btn btn-primary btn--sm" id="cookie-accept">Akceptuję</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
