@@ -400,6 +400,29 @@
     @media (max-width: 400px) {
       .how-steps { grid-template-columns: 1fr; }
     }
+    /* ── Utility classes replacing inline styles ────────────────── */
+    .pt-products-category { padding-top: 3rem; }
+    .pt-products-sub      { padding-top: 1rem; }
+    .cat-intro {
+      color: var(--clr-grey-400);
+      font-size: .95rem;
+      margin-bottom: 2rem;
+      max-width: 680px;
+    }
+    .product-sub-name {
+      font-weight: 400;
+      font-size: .9rem;
+      color: var(--clr-grey-400);
+    }
+    .promo-tagline {
+      margin-top: 1.5rem;
+      font-size: .85rem;
+      color: var(--clr-grey-600);
+    }
+    .promo-flame {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -430,7 +453,7 @@
     <!-- ─── HERO ──────────────────────────────────────────────── -->
     <section class="fire-hero" id="hero">
       <div class="fire-hero-content">
-        <div class="fire-hero-flame">🔥</div>
+        <div class="fire-hero-flame" aria-hidden="true">🔥</div>
         <p class="section-eyebrow">Sprzedaż i Montaż · Cała Wielka Brytania</p>
         <h1>
           Prawdziwy ogień.<br />
@@ -460,32 +483,32 @@
     <section class="why-strip" id="dlaczego">
       <div class="why-grid">
         <div class="why-card">
-          <span class="why-icon">🔥</span>
+          <span class="why-icon" aria-hidden="true">🔥</span>
           <p class="why-title">Prawdziwy płomień</p>
           <p class="why-desc">Żywy ogień z bioetanolu — autentyczne ciepło i atmosfera bez żadnych kompromisów.</p>
         </div>
         <div class="why-card">
-          <span class="why-icon">🏗️</span>
+          <span class="why-icon" aria-hidden="true">🏗️</span>
           <p class="why-title">Profesjonalny montaż</p>
           <p class="why-desc">Nasz zespół montuje biokominek u Ciebie w domu — precyzyjnie, sprawnie, bez bałaganu.</p>
         </div>
         <div class="why-card">
-          <span class="why-icon">🌿</span>
+          <span class="why-icon" aria-hidden="true">🌿</span>
           <p class="why-title">Ekologiczne spalanie</p>
           <p class="why-desc">Bioetanol spala się czysto — bez dymu, sadzy, popiołu ani szkodliwych substancji.</p>
         </div>
         <div class="why-card">
-          <span class="why-icon">🏠</span>
+          <span class="why-icon" aria-hidden="true">🏠</span>
           <p class="why-title">Bez przebudowy</p>
           <p class="why-desc">Nie potrzebujesz komina ani wentylacji. Biokominek pasuje do każdego wnętrza — od razu.</p>
         </div>
         <div class="why-card">
-          <span class="why-icon">🇬🇧</span>
+          <span class="why-icon" aria-hidden="true">🇬🇧</span>
           <p class="why-title">Cała Wielka Brytania</p>
           <p class="why-desc">Obsługujemy klientów w całej Anglii, Walii, Szkocji i Irlandii Północnej.</p>
         </div>
         <div class="why-card">
-          <span class="why-icon">💬</span>
+          <span class="why-icon" aria-hidden="true">💬</span>
           <p class="why-title">Wsparcie po sprzedaży</p>
           <p class="why-desc">Służymy radą przy doborze paliwa, konserwacji i użytkowaniu — przez cały okres eksploatacji.</p>
         </div>
@@ -519,11 +542,11 @@
         </div>
 
         <!-- ── WALL-MOUNTED ──────────────────────────────────── -->
-        <div id="scienne" style="padding-top: 3rem;">
+        <div id="scienne" class="pt-products-category">
           <div class="products-category-label">
-            <span class="cat-label-text">🖼️ Biokominki Ścienne (Wiszące)</span>
+            <span class="cat-label-text">Biokominki Ścienne (Wiszące)</span>
           </div>
-          <p style="color: var(--clr-grey-400); font-size: .95rem; margin-bottom: 2rem; max-width: 680px;">
+          <p class="cat-intro">
             Biokominki ścienne to eleganckie rozwiązanie dla nowoczesnych wnętrz.
             Montujemy je na ścianie jak obraz — bez ingerencji w instalacje budynku.
             Zajmują minimum przestrzeni, dostarczając maksimum efektu wizualnego.
@@ -532,12 +555,12 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🔥</span>
+                <span class="product-visual-emoji" aria-hidden="true">🔥</span>
                 <span class="product-badge-tag">Bestseller</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Biokominek Ścienny</p>
-                <h3 class="product-name">Biokominek Wiszący 1200×400<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Biały Połysk ze Szkłem</small></h3>
+                <h3 class="product-name">Biokominek Wiszący 1200×400<br /><small class="product-sub-name">Biały Połysk ze Szkłem</small></h3>
                 <p class="product-desc">
                   Duży, imponujący biokominek ścienny o wymiarach 120×40 cm. Lakierowany biały połysk,
                   przednia szyba ze szkła hartowanego. Idealny jako centralny punkt salonu lub jadalni.
@@ -557,11 +580,11 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🔥</span>
+                <span class="product-visual-emoji" aria-hidden="true">🔥</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Biokominek Ścienny</p>
-                <h3 class="product-name">Biokominek Wiszący 650×400<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Biały Połysk ze Szkłem</small></h3>
+                <h3 class="product-name">Biokominek Wiszący 650×400<br /><small class="product-sub-name">Biały Połysk ze Szkłem</small></h3>
                 <p class="product-desc">
                   Kompaktowy model ścienny o wymiarach 65×40 cm — doskonały do mniejszych pomieszczeń,
                   sypialni lub gabinetu. Ta sama jakość wykonania co większy model: stal, biały połysk,
@@ -581,12 +604,12 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🔥</span>
+                <span class="product-visual-emoji" aria-hidden="true">🔥</span>
                 <span class="product-badge-tag">Czarny Matte</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Biokominek Ścienny</p>
-                <h3 class="product-name">Biokominek BOX Ścienny 65 cm<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte — Stal Skandynawska</small></h3>
+                <h3 class="product-name">Biokominek BOX Ścienny 65 cm<br /><small class="product-sub-name">Czarny Matte — Stal Skandynawska</small></h3>
                 <p class="product-desc">
                   Minimalistyczny biokominek ścienny ze szwedzkiej stali proszkowanej w kolorze
                   głębokiej czerni. Liniowy palnik ze stali nierdzewnej, szczelne boki
@@ -609,11 +632,11 @@
         </div>
 
         <!-- ── FREESTANDING ─────────────────────────────────────── -->
-        <div id="wolnostojace" style="padding-top: 1rem;">
+        <div id="wolnostojace" class="pt-products-sub">
           <div class="products-category-label">
-            <span class="cat-label-text">🏛️ Biokominki Wolnostojące</span>
+            <span class="cat-label-text">Biokominki Wolnostojące</span>
           </div>
-          <p style="color: var(--clr-grey-400); font-size: .95rem; margin-bottom: 2rem; max-width: 680px;">
+          <p class="cat-intro">
             Biokominki wolnostojące to najbardziej elastyczne rozwiązanie — możesz postawić
             je w dowolnym miejscu i przesunąć, gdy zmienisz aranżację. SOLIDBUD dostarcza
             i uruchamia każdy model pod klucz.
@@ -622,12 +645,12 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🏛️</span>
+                <span class="product-visual-emoji" aria-hidden="true">🏛️</span>
                 <span class="product-badge-tag">Mobilny</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Biokominek Wolnostojący</p>
-                <h3 class="product-name">Biokominek Wolnostojący HOME<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matowy Strukturalny</small></h3>
+                <h3 class="product-name">Biokominek Wolnostojący HOME<br /><small class="product-sub-name">Czarny Matowy Strukturalny</small></h3>
                 <p class="product-desc">
                   Klasyczny biokominek wolnostojący w kolorze czarnym strukturalnym matowym.
                   Elegancka forma, solidna konstrukcja — może stać przy ścianie lub
@@ -648,12 +671,12 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🏛️</span>
+                <span class="product-visual-emoji" aria-hidden="true">🏛️</span>
                 <span class="product-badge-tag">Ze Szkłem 360°</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Biokominek Wolnostojący</p>
-                <h3 class="product-name">Biokominek Wolnostojący ze Szkłem 700<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte z Szybą Panoramiczną</small></h3>
+                <h3 class="product-name">Biokominek Wolnostojący ze Szkłem 700<br /><small class="product-sub-name">Czarny Matte z Szybą Panoramiczną</small></h3>
                 <p class="product-desc">
                   Spektakularny biokominek wolnostojący z panoramiczną szybą ze szkła hartowanego
                   o szerokości 700 mm. Ogień widoczny z każdej strony — prawdziwy punkt centralny
@@ -674,12 +697,12 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🏛️</span>
+                <span class="product-visual-emoji" aria-hidden="true">🏛️</span>
                 <span class="product-badge-tag">Inteligentny</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Biokominek Wolnostojący</p>
-                <h3 class="product-name">Biokominek Wolnostojący SMART<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Biały Matowy Strukturalny + Automatyczny Palnik</small></h3>
+                <h3 class="product-name">Biokominek Wolnostojący SMART<br /><small class="product-sub-name">Biały Matowy Strukturalny + Automatyczny Palnik</small></h3>
                 <p class="product-desc">
                   Nowoczesny biokominek wolnostojący z automatycznym palnikiem Smart — zapłon
                   i gaszenie pilotem lub aplikacją. Biały mat strukturalny, smukła sylwetka.
@@ -700,11 +723,11 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🏛️</span>
+                <span class="product-visual-emoji" aria-hidden="true">🏛️</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Biokominek Wolnostojący</p>
-                <h3 class="product-name">Biokominek Wolnostojący ONLY<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte — Wersja Podstawowa</small></h3>
+                <h3 class="product-name">Biokominek Wolnostojący ONLY<br /><small class="product-sub-name">Czarny Matte — Wersja Podstawowa</small></h3>
                 <p class="product-desc">
                   Prosta, elegancka forma dla tych, którzy cenią minimalizm. Model ONLY
                   to czysty czarny mat, palnik w standardzie ręcznym i najwyższa jakość
@@ -727,11 +750,11 @@
         </div>
 
         <!-- ── BUILT-IN / INSERTS ───────────────────────────────── -->
-        <div id="wbudowane" style="padding-top: 1rem;">
+        <div id="wbudowane" class="pt-products-sub">
           <div class="products-category-label">
-            <span class="cat-label-text">🧱 Biokominki Wbudowane i Wkłady</span>
+            <span class="cat-label-text">Biokominki Wbudowane i Wkłady</span>
           </div>
-          <p style="color: var(--clr-grey-400); font-size: .95rem; margin-bottom: 2rem; max-width: 680px;">
+          <p class="cat-intro">
             Biokominki wbudowane i wkłady kominkowe integrują się ze ścianą lub
             istniejącym paleniskiem — dając efekt nieodróżnialny od klasycznego kominka.
             To nasza specjalność: SOLIDBUD muruje, adaptuje i wykańcza całą obudowę.
@@ -740,12 +763,12 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🧱</span>
+                <span class="product-visual-emoji" aria-hidden="true">🧱</span>
                 <span class="product-badge-tag">Polecamy</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Wkład / Wbudowany</p>
-                <h3 class="product-name">Wkład Kominkowy 100 cm<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte ze Szkłem Hartowanym</small></h3>
+                <h3 class="product-name">Wkład Kominkowy 100 cm<br /><small class="product-sub-name">Czarny Matte ze Szkłem Hartowanym</small></h3>
                 <p class="product-desc">
                   Największy wkład w naszej ofercie — szerokość 100 cm, efektowna szyba
                   ze szkła hartowanego, wykończenie w czarnym macie. Wpasowujemy go
@@ -766,11 +789,11 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🧱</span>
+                <span class="product-visual-emoji" aria-hidden="true">🧱</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Wkład / Wbudowany</p>
-                <h3 class="product-name">Wkład Kominkowy 65 cm<br /><small style="font-weight:400;font-size:.9rem;color:var(--clr-grey-400)">Czarny Matte ze Szkłem Hartowanym</small></h3>
+                <h3 class="product-name">Wkład Kominkowy 65 cm<br /><small class="product-sub-name">Czarny Matte ze Szkłem Hartowanym</small></h3>
                 <p class="product-desc">
                   Kompaktowy wkład kominkowy 65 cm — doskonały do zabudowy w mniejszych
                   wnętrzach, sypialniach, biurach czy mieszkaniach. Ten sam standard
@@ -793,11 +816,11 @@
         </div>
 
         <!-- ── ACCESSORIES ──────────────────────────────────────── -->
-        <div id="akcesoria" style="padding-top: 1rem;">
+        <div id="akcesoria" class="pt-products-sub">
           <div class="products-category-label">
-            <span class="cat-label-text">⚗️ Bioetanol i Akcesoria</span>
+            <span class="cat-label-text">Bioetanol i Akcesoria</span>
           </div>
-          <p style="color: var(--clr-grey-400); font-size: .95rem; margin-bottom: 2rem; max-width: 680px;">
+          <p class="cat-intro">
             Dostarczamy również bioetanol wysokiej jakości (96%+) oraz akcesoria
             kominkowe. Wszystko zamówisz razem z kominkiem lub osobno — z dostawą
             na terenie UK.
@@ -806,7 +829,7 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">⚗️</span>
+                <span class="product-visual-emoji" aria-hidden="true">⚗️</span>
                 <span class="product-badge-tag">Do każdego modelu</span>
               </div>
               <div class="product-body">
@@ -832,7 +855,7 @@
 
             <article class="product-card">
               <div class="product-visual">
-                <span class="product-visual-emoji">🧰</span>
+                <span class="product-visual-emoji" aria-hidden="true">🧰</span>
               </div>
               <div class="product-body">
                 <p class="product-type">Akcesoria Kominkowe</p>
@@ -911,7 +934,7 @@
     <section class="section" id="kontakt" style="padding: var(--sp-xl) var(--sp-md);">
       <div class="container">
         <div class="promo-banner">
-          <div style="font-size:2.5rem;margin-bottom:1rem;">🔥</div>
+          <div class="promo-flame" aria-hidden="true">🔥</div>
           <h2>Zamów biokominek<br />z montażem SOLIDBUD</h2>
           <p>
             Skontaktuj się z nami — bezpłatna konsultacja, pomoc w doborze modelu
@@ -922,7 +945,7 @@
             <a href="mailto:contact@solidbud.co.uk" class="btn btn-primary">📩 Napisz do nas</a>
             <a href="index.html#contact" class="btn btn-outline">Formularz kontaktowy</a>
           </div>
-          <p style="margin-top:1.5rem;font-size:.85rem;color:var(--clr-grey-600);">
+          <p class="promo-tagline">
             📧 contact@solidbud.co.uk &nbsp;·&nbsp; 🌐 www.solidbud.co.uk<br />
             Czas odpowiedzi: do 1 dnia roboczego
           </p>
