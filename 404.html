@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Strona nie znaleziona — SolidBud Ltd" />
+  <title>404 — Strona nie znaleziona | SolidBud Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    .error-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, var(--clr-dark) 0%, var(--clr-dark-3) 100%);
+    }
+
+    .error-inner { max-width: 560px; }
+
+    .error-code {
+      font-size: clamp(5rem, 20vw, 10rem);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--clr-dark-4);
+      letter-spacing: -0.04em;
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    .error-code span {
+      color: var(--clr-gold);
+    }
+
+    .error-title {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 700;
+      color: var(--clr-white);
+      margin: 0.5rem 0 1rem;
+    }
+
+    .error-text {
+      font-size: 1rem;
+      color: var(--clr-grey-400);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .error-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--clr-gold);
+      margin: 1.5rem auto;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────────── -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-solid">Solid</span><span class="logo-bud">Bud</span>
+        <span class="logo-ltd">Ltd</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Usługi</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="kalkulator.html">Kalkulator</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="error-section">
+      <div class="error-inner">
+        <div class="error-code">4<span>0</span>4</div>
+        <div class="error-divider"></div>
+        <h1 class="error-title">Strona nie znaleziona</h1>
+        <p class="error-text">
+          Strona, której szukasz, nie istnieje lub została przeniesiona.<br />
+          Wróć na stronę główną lub skontaktuj się z nami.
+        </p>
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary">← Strona główna</a>
+          <a href="kalkulator.html" class="btn btn-outline">Kalkulator wyceny</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-solid">Solid</span><span class="logo-bud">Bud</span>
+          <span class="logo-ltd">Ltd</span>
+        </a>
+        <p>Solid foundations. Intelligent future.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html#services">Usługi</a>
+        <a href="index.html#about">About</a>
+        <a href="kalkulator.html">Kalkulator</a>
+        <a href="kominki.html">Biokominki</a>
+        <a href="glazurnictwo.html">Glazurnictwo</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> SolidBud Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    var y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+    // Mobile nav
+    var t = document.getElementById('nav-toggle');
+    var n = document.getElementById('nav-links');
+    if (t && n) {
+      t.addEventListener('click', function () {
+        var o = n.classList.contains('open');
+        n.classList.toggle('open', !o);
+        t.classList.toggle('open', !o);
+        t.setAttribute('aria-expanded', String(!o));
+        document.body.style.overflow = o ? '' : 'hidden';
+      });
+    }
+  </script>
+</body>
+</html>
