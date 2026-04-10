@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kalkulator wyceny usług budowlanych — SolidBud Ltd Manchester. Oblicz koszt malowania, płytek, paneli, elewacji i więcej." />
+  <title>Kalkulator Wyceny — SolidBud Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/kalkulator.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://www.solidbud.co.uk/kalkulator.html" />
+  <meta name="robots" content="index, follow" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-solid">Solid</span><span class="logo-bud">Bud</span>
+        <span class="logo-ltd">Ltd</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Usługi</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#modular">Modular Homes</a></li>
+        <li><a href="kominki.html">Biokominki</a></li>
+        <li><a href="glazurnictwo.html">Glazurnictwo</a></li>
+        <li><a href="kalkulator.html" class="nav-cta" aria-current="page">Kalkulator</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ───────────────────────────────────────────────── -->
+    <section class="calc-hero">
+      <div class="container">
+        <p class="section-eyebrow">Bezpłatna wycena online</p>
+        <h1 class="calc-hero-title">
+          Kalkulator<br /><em>Wyceny</em>
+        </h1>
+        <p class="calc-hero-sub">
+          Wybierz usługi i podaj powierzchnię — natychmiast zobaczysz orientacyjny koszt.
+          Ceny netto + VAT 20%.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── KALKULATOR ─────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container calc-layout">
+
+        <!-- Lewa kolumna: karty usług -->
+        <div>
+          <div id="calc-services">
+            <!-- renderowane przez JS -->
+          </div>
+        </div>
+
+        <!-- Prawa kolumna: podsumowanie sticky -->
+        <aside class="calc-summary" aria-label="Podsumowanie wyceny">
+          <h2 class="calc-summary-title">📋 Twoja wycena</h2>
+
+          <div class="summary-items" id="summary-items" aria-live="polite">
+            <!-- renderowane przez JS -->
+          </div>
+          <p class="summary-empty" id="summary-empty">
+            Zaznacz usługi po lewej stronie, aby zobaczyć wycenę.
+          </p>
+
+          <div class="summary-totals">
+            <div class="summary-row">
+              <span>Netto</span>
+              <span id="summary-netto">£0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>VAT (20%)</span>
+              <span id="summary-vat">£0.00</span>
+            </div>
+            <div class="summary-row total">
+              <span>Łącznie brutto</span>
+              <span id="summary-brutto">£0.00</span>
+            </div>
+          </div>
+
+          <div class="summary-actions">
+            <button class="btn btn-primary btn--full" id="btn-copy">
+              📋 Skopiuj wycenę
+            </button>
+            <button class="btn btn-outline btn--full" id="btn-print">
+              🖨️ Drukuj / PDF
+            </button>
+            <button class="btn-ghost" id="btn-reset">
+              ↺ Wyczyść formularz
+            </button>
+          </div>
+
+          <p class="summary-note">
+            Wycena ma charakter orientacyjny. Ostateczna cena jest ustalana indywidualnie po oględzinach.<br />
+            <a href="index.html#contact" style="color: var(--clr-gold);">Skontaktuj się z nami →</a>
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-solid">Solid</span><span class="logo-bud">Bud</span>
+          <span class="logo-ltd">Ltd</span>
+        </a>
+        <p>Solid foundations. Intelligent future.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html#services">Usługi</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#modular">Modular Homes</a>
+        <a href="kominki.html">Biokominki</a>
+        <a href="glazurnictwo.html">Glazurnictwo</a>
+        <a href="kalkulator.html">Kalkulator</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> SolidBud Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ─── BACK TO TOP ─────────────────────────────────────────── -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ─── TOAST ──────────────────────────────────────────────── -->
+  <div class="toast" id="calc-toast" role="status" aria-live="polite"></div>
+
+  <script src="js/kalkulator.js"></script>
+</body>
+</html>
