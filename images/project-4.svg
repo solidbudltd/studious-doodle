@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d6a8f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sky4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a4a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg4)"/>
+  <!-- Sky overlay at top -->
+  <rect width="600" height="200" fill="url(#sky4)" opacity="0.5"/>
+  <!-- Ground -->
+  <rect y="340" width="600" height="60" fill="rgba(0,0,0,0.3)"/>
+  <!-- Building silhouette (varies by type) -->
+  <rect x="150" y="120" width="300" height="220" fill="rgba(255,255,255,0.15)"/>
+  <rect x="160" y="130" width="280" height="210" fill="rgba(0,0,0,0.3)"/>
+  <!-- Windows pattern -->
+  <rect x="180" y="150" width="30" height="25" fill="rgba(255,255,200,0.6)"/>
+  <rect x="225" y="150" width="30" height="25" fill="rgba(255,255,200,0.5)"/>
+  <rect x="270" y="150" width="30" height="25" fill="rgba(255,255,200,0.7)"/>
+  <rect x="315" y="150" width="30" height="25" fill="rgba(255,255,200,0.4)"/>
+  <rect x="360" y="150" width="30" height="25" fill="rgba(255,255,200,0.6)"/>
+  <rect x="180" y="195" width="30" height="25" fill="rgba(255,255,200,0.5)"/>
+  <rect x="225" y="195" width="30" height="25" fill="rgba(255,255,200,0.7)"/>
+  <rect x="270" y="195" width="30" height="25" fill="rgba(255,255,200,0.4)"/>
+  <rect x="315" y="195" width="30" height="25" fill="rgba(255,255,200,0.6)"/>
+  <rect x="360" y="195" width="30" height="25" fill="rgba(255,255,200,0.5)"/>
+  <rect x="180" y="240" width="30" height="25" fill="rgba(255,255,200,0.7)"/>
+  <rect x="225" y="240" width="30" height="25" fill="rgba(255,255,200,0.5)"/>
+  <rect x="270" y="240" width="30" height="25" fill="rgba(255,255,200,0.6)"/>
+  <rect x="315" y="240" width="30" height="25" fill="rgba(255,255,200,0.7)"/>
+  <rect x="360" y="240" width="30" height="25" fill="rgba(255,255,200,0.4)"/>
+  <rect x="180" y="285" width="30" height="25" fill="rgba(255,255,200,0.6)"/>
+  <rect x="225" y="285" width="30" height="25" fill="rgba(255,255,200,0.5)"/>
+  <rect x="270" y="285" width="30" height="25" fill="rgba(255,255,200,0.8)"/>
+  <rect x="315" y="285" width="30" height="25" fill="rgba(255,255,200,0.5)"/>
+  <rect x="360" y="285" width="30" height="25" fill="rgba(255,255,200,0.7)"/>
+  <!-- Door -->
+  <rect x="260" y="315" width="80" height="45" fill="rgba(0,0,0,0.5)"/>
+  <!-- Side buildings -->
+  <rect x="50" y="200" width="90" height="140" fill="rgba(255,255,255,0.1)"/>
+  <rect x="460" y="220" width="90" height="120" fill="rgba(255,255,255,0.1)"/>
+  <!-- Accent bar at bottom -->
+  <rect y="380" width="600" height="8" fill="#e8420a"/>
+  <!-- Label -->
+  <rect x="0" y="0" width="600" height="50" fill="rgba(232,66,10,0.85)"/>
+  <text x="300" y="31" text-anchor="middle" font-size="18" fill="white" font-family="Arial, sans-serif" font-weight="bold">Kompleks Usługowy</text>
+  <!-- SOLIDBUD badge -->
+  <rect x="450" y="320" width="120" height="35" fill="#e8420a" rx="4" opacity="0.9"/>
+  <text x="510" y="342" text-anchor="middle" font-size="12" fill="white" font-family="Arial, sans-serif" font-weight="bold">SOLIDBUD LTD</text>
+</svg>
